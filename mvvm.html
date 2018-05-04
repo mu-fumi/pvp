@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Document
+    </title>
+</head>
+
+<body>
+    <h1 id="app">
+        {{test}}
+        <input p-model="test">
+    </h1>
+    <script src="./pvp.js"></script>
+    <script>
+        var src = new Pvp({
+            el: '#app',
+            data: {
+                test: 'hello world',
+                name: 'canfoo'
+            }
+        });
+    </script>
+</body>
+
+</html>
